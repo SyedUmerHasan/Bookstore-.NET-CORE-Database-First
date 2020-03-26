@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore .NET Core Database First", "BookStore .NET Core Database First\BookStore .NET Core Database First.csproj", "{64F91F66-8721-4B44-B949-25C4FC2AE140}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64F91F66-8721-4B44-B949-25C4FC2AE140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F91F66-8721-4B44-B949-25C4FC2AE140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F91F66-8721-4B44-B949-25C4FC2AE140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F91F66-8721-4B44-B949-25C4FC2AE140}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1146806C-D082-4621-A7E3-C20533C0A167}
+	EndGlobalSection
+EndGlobal

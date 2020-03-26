@@ -12,26 +12,31 @@ namespace BookStore_.NET_Core_Database_First.Controllers
     [Route("[controller]")]
     public class StudentController : ControllerBase
     {
-        private int count = 2;
         [HttpGet]
         public IEnumerable<Student> Get()
         {
-            using (var context = new CRUD_DATABASEFIRSTContext())
+            using (var ctx = new CRUD_DATABASEFIRSTContext())
             {
+                Student student; 
+                student = ctx.Student.Where(s => s.Name == "Umer Hasan").FirstOrDefault();
+                if(student == null)
+                {
+                    student = new Student();
+                    student.Name = "syed umer haasn";
+                    ctx.Student.Add(student);
+                }
 
-                Student obj = new Student();
-                obj.Name = "Umer hasan";
-                obj.Class = "Final Year";
-                obj.RollNumber = "k163893";
-                
-                context.Student.Add(obj);
-                context.SaveChanges();
+                ctx.SaveChanges();
 
-                return context.Student.ToList();
+                return ctx.Student.Where(obj => obj.Name == "syed umer haasn").ToList();
             }
         }
+        //public string Get()
+        //{
+        //    return "umer";
+        //}
 
-       
+
 
     }
 }

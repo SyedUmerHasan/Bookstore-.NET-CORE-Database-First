@@ -34,15 +34,18 @@ namespace BookStore_.NET_Core_Database_First.Models
 
                 entity.Property(e => e.Class)
                     .HasColumnName("class")
-                    .HasColumnType("text");
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Name)
                     .HasColumnName("name")
-                    .HasColumnType("text");
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.RollNumber)
                     .HasColumnName("rollNumber")
-                    .HasColumnType("text");
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);
